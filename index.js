@@ -1,3 +1,5 @@
+import { API } from "./constants.js";
+
 const time = document.querySelector("#time-text");
 const timeAmPm = document.querySelector("#am-pm");
 const myDate = document.querySelector("#date");
@@ -74,7 +76,7 @@ const getWeatherData = async (pos) => {
 
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=imperial&appid=${""}`
+      `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=imperial&appid=${API}`
     );
 
     if (response.status === 200) {
