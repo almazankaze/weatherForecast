@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="current-info">
+        <div class="date-container">
+          <div class="time">
+            <p id="time-text">12:00</p>
+            <p id="am-pm">PM</p>
+          </div>
+          <div class="date" id="date">Monday, May 2</div>
+        </div>
+
+        <div class="today" id="today-info">
+          <img src="" alt="weather icon" class="today-icon" id="today-icon" />
+          <div class="today-text-container">
+            <div id="current-temp">25.6&#176;</div>
+            <p id="today-desc">description</p>
+            <div class="today-text" id="humidity">Humidity: 68%</div>
+            <div class="today-text" id="wind">Wind: 6 mph</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="future-forecast">
+        <div class="weather-forecast" id="weather-forecast"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
